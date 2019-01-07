@@ -31,6 +31,10 @@ QUnit.module('Player', {
   }
 });
 
+QUnit.test('this test should fail', function(assert) {
+  throw new Error('fail');
+});
+
 QUnit.test('should create player instance that inherits from component and dispose it', function(assert) {
   const player = TestHelpers.makePlayer();
 
